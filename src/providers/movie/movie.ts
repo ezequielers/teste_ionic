@@ -17,8 +17,12 @@ export class MovieProvider {
     console.log('Hello MovieProvider Provider');
   }
 
-  getLatestMovies() {
-    return this.http.get(this.barApiPath + '/movie/popular?api_key=c882e266c4f519e33931b3e60f71fb93');
+  getLatestMovies(page = 1) {
+    return this.http.get(this.barApiPath + `/movie/popular?page=${page}&api_key=c882e266c4f519e33931b3e60f71fb93`);
+  }
+
+  getMovieDetails(movieId) {
+    return this.http.get(this.barApiPath + `/movie/${movieId}?api_key=c882e266c4f519e33931b3e60f71fb93`);
   }
 
 }
