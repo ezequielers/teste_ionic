@@ -19,6 +19,8 @@ import { ConfiguracoesPageModule } from '../pages/configuracoes/configuracoes.mo
 import { SobrePageModule } from '../pages/sobre/sobre.module';
 import { PerfilPageModule } from '../pages/perfil/perfil.module';
 import { FeedDetailPageModule } from '../pages/feed-detail/feed-detail.module';
+import { AtletasPageModule } from '../pages/atletas/atletas.module';
+import { CameraPageModule } from '../pages/camera/camera.module';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { FeedDetailPageModule } from '../pages/feed-detail/feed-detail.module';
     ConfiguracoesPageModule,
     SobrePageModule,
     PerfilPageModule,
-    FeedDetailPageModule
+    FeedDetailPageModule,
+    AtletasPageModule,
+    CameraPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
